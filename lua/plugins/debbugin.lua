@@ -41,6 +41,8 @@ return{
         stopOnEntry = false,
       },
     }
+    vim.keymap.set('n', '<space>b', dap.toggle_breakpoint, {})
+    vim.keymap.set('n', '<space>c', dap.continue, {})
   end,
 }
 
