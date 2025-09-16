@@ -84,8 +84,8 @@ Feel free to fork the repository and submit pull requests to improve or add new 
 [S-web155](https://github.com/S-web155)
 
 ## Inspiration
-Highly inspired from typecraft(https://www.youtube.com/@typecraft_dev)
-You can go check out his nvim-config at(https://github.com/cpow/neovim-for-newbs)
+- Highly inspired from typecraft(https://www.youtube.com/@typecraft_dev)
+- You can go check out his nvim-config at(https://github.com/cpow/neovim-for-newbs)
 
 ---
 
