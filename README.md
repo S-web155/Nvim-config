@@ -59,11 +59,15 @@ This repository contains my personal Neovim configuration files written in Lua. 
   mkdir nvim
   ```
 - And then copy the git
+- If you had nvim config earlier and now you are switching
+- Please make sure to clean the nvim and nvim-data folder on window's
+- or the nvim and ~/.local/share/nvim/ in mac
 
 3. **Start Neovim:**
    ```bash
    nvim
    ```
+- After you start it the plugins will install itself
 
 ## Usage
 
