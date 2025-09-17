@@ -4,7 +4,8 @@ return {
     'nvim-lua/plenary.nvim',
     'akinsho/toggleterm.nvim'
   },
-  config = function()
+
+  config = function ()
     local osys = require("cmake-tools.osys")
     require("cmake-tools").setup {
       cmake_command = "cmake", -- this is used to specify cmake command path
@@ -152,5 +153,5 @@ return {
       cmake_virtual_text_support = true, -- Show the target related to current file using virtual text (at right corner)
       cmake_use_scratch_buffer = false, -- A buffer that shows what cmake-tools has done
     }
-  end
+  end,
 }
