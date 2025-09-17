@@ -41,7 +41,7 @@ This repository contains my personal Neovim configuration files written in Lua. 
   sudo port selfupdate
   sudo port install neovim
   ```
-- **Nerd Fonts:**  
+### Nerd Fonts:  
   For optimal icon support in Neovim plugins (such as Lualine, Neo-Tree, and Dashboard), install a [Nerd Font](https://github.com/ryanoasis/nerd-fonts).  
   Example installation:
   ```bash
