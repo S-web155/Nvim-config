@@ -1,6 +1,7 @@
 {
     "diagnostics.globals": [
         "vim",
-        "text"
+        "text",
+        "bufferline"
     ]
 }
