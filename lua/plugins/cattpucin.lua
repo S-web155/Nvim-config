@@ -5,6 +5,7 @@ return{ "catppuccin/nvim",
     require("catppuccin").setup({
       flavour = 'macchiato',
       auto_integrations = true,
+      transparent_background=true,
     })
     vim.cmd.colorscheme "catppuccin"
   end,
