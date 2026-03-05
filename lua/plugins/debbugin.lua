@@ -10,7 +10,7 @@ return{
     local dap = require('dap')
     local dapui = require("dapui")
 
-    require("dap-python").setup("/home/sanchit/.local/share/nvim/mason/packages/debugpy/venv/bin/python3.exe")
+    require("dap-python").setup("/home/sanchit/.local/share/nvim/mason/bin/debugpy")
     require('dapui').setup()
     dap.listeners.before.attach.dapui_config = function()
       dapui.open()
@@ -26,7 +26,7 @@ return{
     end
     dap.adapters.codelldb = {
       type = "executable",
-      command = "/home/sanchit/.local/share/nvim/mason/packages/codelldb/extension/adapter/codelldb.exe",
+      command = "/home/sanchit/.local/share/nvim/mason/bin/codelldb",
       detached = false,
     }
     dap.configurations.cpp = {
