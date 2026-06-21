@@ -19,19 +19,22 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      local lspconfig = require('lspconfig')
-      lspconfig.lua_ls.setup({
+      vim.lsp.config("lua_ls",{
         capabilities = capabilities
       })
-      lspconfig.clangd.setup({
+      vim.lsp.config("clangd",{
         capabilities = capabilities
       })
-      lspconfig.pyright.setup({
+      vim.lsp.config("pyright",{
         capabilities = capabilities
       })
-      lspconfig.cmake.setup({
+      vim.lsp.config("cmake",{
         capabilities = capabilities
       })
+      vim.lsp.enable("lua_ls")
+      vim.lsp.enable("clangd")
+      vim.lsp.enable("pyright")
+      vim.lsp.enable("cmake")
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
       vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, {})
