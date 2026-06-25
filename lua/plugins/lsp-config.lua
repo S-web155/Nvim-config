@@ -31,10 +31,16 @@ return {
       vim.lsp.config("cmake",{
         capabilities = capabilities
       })
+      vim.lsp.config("qmlls",{
+        cmd = {"qmlls6"},
+        filetypes = { "qml", "qmljs" },
+        capabilities = capabilities
+      })
       vim.lsp.enable("lua_ls")
       vim.lsp.enable("clangd")
       vim.lsp.enable("pyright")
       vim.lsp.enable("cmake")
+      vim.lsp.enable("qmlls")
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
       vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, {})
