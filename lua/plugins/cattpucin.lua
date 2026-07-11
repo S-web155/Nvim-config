@@ -7,6 +7,6 @@ return{ "catppuccin/nvim",
       auto_integrations = true,
       transparent_background=true,
     })
-    vim.cmd.colorscheme "catppuccin"
+    vim.cmd.colorscheme "catppuccin-nvim"
   end,
 }
